@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.NewTransactionIncomeFragment"
+    android:background="#E5E5E5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Details"
+            android:id="@+id/textView4"
+            android:layout_marginBottom="10dp"
+            android:textSize="24sp"
+            android:textColor="#008263"
+            android:layout_marginLeft="5dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"
+                    android:id="@+id/textView2"
+                    android:textSize="16sp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/DateTxt"
+                    android:focusable="false"
+                    android:textSize="16sp"
+                    android:textColor="#212421" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount:"
+                    android:id="@+id/textView12"
+                    android:textSize="16sp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/IncomeTxt"
+                    android:textSize="16sp"
+                    android:textColor="#212421"
+                    android:imeOptions="actionDone"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"
+                    android:id="@+id/textView3"
+                    android:textSize="16sp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CategoryTxt"
+                    android:focusable="false"
+                    android:textSize="16sp"
+                    android:textColor="#212421" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/CancelBtn"
+        android:src="@drawable/cancel"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/SaveBtn"
+        android:src="@drawable/save"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/CancelBtn"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_alignEnd="@+id/linearLayout3"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+</RelativeLayout>

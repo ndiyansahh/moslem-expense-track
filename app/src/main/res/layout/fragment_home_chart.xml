@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.HomeChartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout1"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView2">
+
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="2"-->
+            <!--android:layout_above="@+id/textView2"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_margin="10dp">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:src="#ff0d00" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Expense"-->
+                    <!--android:id="@+id/textView14"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/imageView2"-->
+                    <!--android:layout_toEndOf="@+id/imageView2"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_centerVertical="true" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:id="@+id/imageView3"-->
+                    <!--android:src="#15ff00" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Income"-->
+                    <!--android:id="@+id/textView16"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/imageView3"-->
+                    <!--android:layout_toEndOf="@+id/imageView3"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_centerVertical="true" />-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/chart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/AddExpenseBtn"
+            android:src="@drawable/exp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/chart"
+            android:layout_alignLeft="@+id/chart"
+            android:layout_alignStart="@+id/chart" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/AddIncomeBtn"
+            android:src="@drawable/inc"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/chart"
+            android:layout_alignRight="@+id/chart"
+            android:layout_alignEnd="@+id/chart" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="**Click the chart to view report**"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="#4d4d4d" />
+
+</RelativeLayout>

@@ -1,0 +1,621 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.SyariahFragment"
+    android:background="#E5E5E5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat"
+                android:id="@+id/ZakatBtn"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_boarder"
+                android:layout_margin="5dp"
+                android:textColor="#E5E5E5"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ZakatDLayout"
+                android:visibility="gone"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MY ZAKAT"
+                    android:id="@+id/MyZktBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5"
+                    android:textSize="24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MyZktLayout"
+                    android:contextClickable="true"
+                    android:transitionGroup="false"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/linearLayout12">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zakat Profession"
+                            android:id="@+id/textView1"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#212421" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/MyZakatProf"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:textColor="#212421" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Pay Zakat Profession"
+                            android:id="@+id/PayZktProfBtn"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zakat Maal"
+                            android:id="@+id/textView2"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textColor="#212421" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/MyZakatMaal"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:textColor="#212421" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Pay Zakat Maal"
+                            android:id="@+id/PayZktMaalBtn"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zakat Fitrah"
+                            android:id="@+id/textView3"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_below="@+id/linearLayout12"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#212421" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/MyZakatFit"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_below="@+id/textView27"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="#212421" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Pay Zakat Fitrah"
+                            android:id="@+id/PayZktFitBtn"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_below="@+id/textView28"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Maal"
+                    android:id="@+id/ZktMaalBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5"
+                    android:textSize="24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ZktMaalLayout"
+                    android:contextClickable="true"
+                    android:transitionGroup="false"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/ZktMaalTxt"
+                        android:textSize="12sp"
+                        android:layout_margin="3dp"
+                        android:visibility="visible"
+                        android:padding="3dp"
+                        android:textColor="#212421" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Profession"
+                    android:id="@+id/ZktProfBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5"
+                    android:textSize="24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ZktProfLayout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/ZktProfTxt"
+                        android:textSize="12sp"
+                        android:layout_margin="3dp"
+                        android:visibility="visible"
+                        android:padding="3dp"
+                        android:textColor="#212421" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Fitrah"
+                    android:id="@+id/ZktFitBtn"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5"
+                    android:textSize="24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ZktFitLayout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/ZktFitTxt"
+                        android:textSize="12sp"
+                        android:layout_margin="3dp"
+                        android:visibility="visible"
+                        android:padding="3dp"
+                        android:textColor="#212421" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Zakat Calculator"
+                    android:id="@+id/ZakatCalc"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kurban"
+                android:id="@+id/KurbanBtn"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_boarder"
+                android:layout_margin="5dp"
+                android:textColor="#E5E5E5"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/KurbanDLayout"
+                android:visibility="gone"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MY KURBAN"
+                    android:id="@+id/MyKurbanBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MyKurbanLayout"
+                    android:padding="3dp"
+                    android:visibility="gone" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tableLayout4">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:layout_margin="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total number of kurban:"
+                                android:id="@+id/textView4"
+                                android:layout_column="0"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Number"
+                                android:id="@+id/TotKurbanTxt"
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:layout_margin="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total monthly payment:"
+                                android:id="@+id/textView5"
+                                android:layout_column="0"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Number"
+                                android:id="@+id/TotPayment"
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:layout_margin="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date:"
+                                android:id="@+id/textView6"
+                                android:layout_column="0"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date"
+                                android:id="@+id/DateKurbantxt"
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:layout_margin="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status:"
+                                android:id="@+id/textView7"
+                                android:layout_column="0"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:id="@+id/StatusKurbantxt"
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:textColor="#212421" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Pay Kurban"
+                        android:id="@+id/PayKurbanBtn"
+                        android:layout_below="@+id/tableLayout4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kurban Info"
+                    android:id="@+id/KurbanInfobtn"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/KurbanContainerLayout"
+                    android:padding="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/KurbanInfoTxt"
+                        android:textSize="12sp"
+                        android:padding="3dp"
+                        android:textColor="#212421" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kurban Types"
+                    android:id="@+id/JnskurbanBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/JnskurbanLayout"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/KambingImg"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/SapiImg"
+                        android:layout_toStartOf="@+id/SapiImg"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/SapiImg"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/DombaImg"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/SapiImg"
+                        android:layout_toEndOf="@+id/SapiImg"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="30dp"
+                        android:background="@android:color/transparent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haji &amp; Umrah"
+                android:id="@+id/HajiUmrahBtn"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_boarder"
+                android:layout_margin="5dp"
+                android:textColor="#E5E5E5"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/HajiUmrahDLayout"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Haji Information"
+                    android:id="@+id/HajiBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:id="@+id/HajiContainerLayout"
+                    android:visibility="gone">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/sliderHaji"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/sliderHajiIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/HajiTxt"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/sliderHaji"
+                        android:layout_centerHorizontal="true"
+                        android:padding="3dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#212421" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Umrah Information"
+                    android:id="@+id/UmrahBtn"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24sp"
+                    android:background="@drawable/button_boarder"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#E5E5E5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:id="@+id/UmrahContainerLayout"
+                    android:visibility="gone">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/sliderUmrah"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/sliderUmrahIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/UmrahTxt"
+                        android:textSize="12sp"
+                        android:padding="3dp"
+                        android:layout_below="@+id/sliderUmrah"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#212421" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.HomeFragment"
+    android:background="#E5E5E5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="false"
+        android:id="@+id/linearLayout5"
+        android:paddingBottom="45dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/BudgetNomTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_alignBaseline="@+id/textView13"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:text="ASDSAD" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/BudgetNomTxt"
+                android:layout_toStartOf="@+id/BudgetNomTxt"
+                android:layout_marginRight="5dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Total Expense"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/textView6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/totalExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:text="ASDSAD" />
+
+            <ListView
+                android:id="@+id/listHomeExpense"
+                android:layout_below="@id/totalExpense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Remaining"
+            android:gravity="center_vertical"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/remainingBudget"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="ASDASD" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

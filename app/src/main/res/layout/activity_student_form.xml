@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.MET.salman.MoeslemExpenseTracker.StudentForm"
+    android:background="#E5E5E5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#6B9984"
+        android:id="@+id/relativeLayout101">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STUDENT FORM"
+            android:id="@+id/HeaderTxt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#E5E5E5"
+            android:layout_marginLeft="15dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout6"
+        android:layout_below="@+id/relativeLayout101"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/tableLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget Amount:"
+                    android:id="@+id/textView2"
+                    android:layout_column="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/BudgetTxt"
+                    android:layout_column="2"
+                    android:textSize="16sp"
+                    android:textColor="#212421"
+                    android:imeOptions="actionDone"/>
+            </TableRow>
+
+            <!--<TableRow-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Additional Income"-->
+                    <!--android:id="@+id/textView2"-->
+                    <!--android:layout_column="1"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<Switch-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/AddIncSwitch"-->
+                    <!--android:layout_column="2"-->
+                    <!--android:checked="false"-->
+                    <!--android:layout_gravity="center_horizontal" />-->
+
+            <!--</TableRow>-->
+
+        </TableLayout>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/SaveBtn"
+            android:src="@drawable/save"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

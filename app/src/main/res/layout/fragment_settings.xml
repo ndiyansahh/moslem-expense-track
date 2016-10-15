@@ -1,0 +1,319 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.SettingsFragment"
+    android:background="#E5E5E5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:background="#E5E5E5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#E5E5E5"
+                android:layout_margin="3dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Budget:"
+                        android:id="@+id/textView30"
+                        android:layout_marginRight="30dp"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/BudgetTxt"
+                        android:imeOptions="actionDone"
+                        android:textColor="#212421" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status:"
+                        android:id="@+id/textView31"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/StatusTxt"
+                        android:layout_column="1"
+                        android:focusable="false"
+                        android:textColor="#212421" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/InstallmentRow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Installment:"
+                        android:id="@+id/textView32"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/InstallmentTxt"
+                        android:layout_column="1"
+                        android:imeOptions="actionDone"
+                        android:textColor="#212421" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/TotalWealthRow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Wealth:"
+                        android:id="@+id/textView33"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/TotalWealthTxt"
+                        android:layout_column="1"
+                        android:imeOptions="actionDone"
+                        android:textColor="#212421" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/DebtRow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Debt:"
+                        android:id="@+id/textView34"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/DebtTxt"
+                        android:layout_column="1"
+                        android:imeOptions="actionDone"
+                        android:textColor="#212421" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passcode:"
+                        android:id="@+id/textView29"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PasscodeSwitch"
+                        android:layout_column="1"
+                        android:checked="false"
+                        android:layout_gravity="center_horizontal" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/ZakatMaalRow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zakat Maal"
+                        android:id="@+id/textView11"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ZakatMaalSwitch"
+                        android:layout_column="1"
+                        android:checked="false"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/HelpBtn1"
+                        android:layout_column="2"
+                        android:src="@drawable/help"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/ZakatProfRow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zakat Profession"
+                        android:id="@+id/textView18"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ZakatProfSwitch"
+                        android:layout_column="1"
+                        android:checked="false"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/HelpBtn2"
+                        android:layout_column="2"
+                        android:src="@drawable/help"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/ZakatFitRow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zakat Fitrah"
+                        android:id="@+id/textView19"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ZakatFitSwitch"
+                        android:layout_column="1"
+                        android:checked="false"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/HelpBtn3"
+                        android:layout_column="2"
+                        android:src="@drawable/help"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:id="@+id/tableRow" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kurban"
+                        android:id="@+id/textView22"
+                        android:layout_column="0"
+                        android:textSize="16sp"
+                        android:textColor="#212421" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/KurbanSwitch"
+                        android:layout_column="1"
+                        android:checked="false"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/HelpBtn4"
+                        android:layout_column="2"
+                        android:src="@drawable/help"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

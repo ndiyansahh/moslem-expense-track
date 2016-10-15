@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.ExpenseFragment"
+    android:background="#E5E5E5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/SortBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:text="Sort"
+                android:textColor="#1e5b00"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/ExportBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:allowUndo="false"
+                android:background="@android:color/transparent"
+                android:text="Export"
+                android:textColor="#1e5b00"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/relativeLayout4"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtIncome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textColor="#E5E5E5"
+                android:background="#EB5244"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/txtExpense"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#212421"
+                android:background="#FCAE28"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewExpense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout4"
+            android:paddingTop="5dp">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

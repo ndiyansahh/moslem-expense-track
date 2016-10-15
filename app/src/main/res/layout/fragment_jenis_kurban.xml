@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.JenisKurban"
+    android:orientation="vertical"
+    android:background="#E5E5E5"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_weight="3"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:weightSum="4"
+                android:id="@+id/linearLayout7">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/btn1"
+                    android:layout_weight="1"
+                    android:background="#FF2C29"
+                    android:textSize="14sp"
+                    android:allowUndo="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/btn2"
+                    android:layout_weight="1"
+                    android:background="#FF4829"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/btn3"
+                    android:layout_weight="1"
+                    android:background="#FF6C29"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/btn4"
+                    android:layout_weight="1"
+                    android:background="#FF9629"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick a weight to see the price"
+                android:id="@+id/DescriptionTxt"
+                android:layout_below="@+id/linearLayout7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textColor="#212421" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimation time until eligible to Kurban:"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/DescriptionTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textColor="#212421" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Savings /month:"
+                        android:id="@+id/textView2"
+                        android:layout_column="0"
+                        android:textSize="12sp"
+                        android:textColor="#212421" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/SavingTxt"
+                        android:layout_column="1"
+                        android:imeOptions="actionDone"
+                        android:textSize="12sp"
+                        android:textColor="#212421" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saving Duration:"
+                        android:id="@+id/textView3"
+                        android:layout_column="0"
+                        android:textSize="12sp"
+                        android:textColor="#212421" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Durationtxt"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#212421" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/SavingBtn"
+                    android:layout_column="0"
+                    android:src="@drawable/savingbtn"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ReminderText"
+                    android:layout_below="@+id/DescriptionTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#212421" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

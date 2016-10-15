@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.MET.salman.MoeslemExpenseTracker.EmployeeForm"
+    android:background="#E5E5E5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B9984"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPLOYEE FORM"
+            android:id="@+id/HeaderTxt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#E5E5E5"
+            android:layout_marginLeft="15dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout9"
+        android:layout_below="@+id/relativeLayout10"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/tableLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget Amount:"
+                    android:id="@+id/textView2"
+                    android:layout_column="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/BudgetText"
+                    android:layout_column="2"
+                    android:textSize="16sp"
+                    android:textColor="#212421"
+                    android:imeOptions="actionDone"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debt/Installment:"
+                    android:id="@+id/textView12"
+                    android:layout_column="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/InstallmentText"
+                    android:layout_column="2"
+                    android:textSize="16sp"
+                    android:textColor="#212421"
+                    android:imeOptions="actionDone"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/HelpBtn1"
+                    android:layout_column="3"
+                    android:src="@drawable/help"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitCenter" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Wealth:"
+                    android:id="@+id/textView3"
+                    android:layout_column="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/TotalWealthText"
+                    android:layout_column="2"
+                    android:textSize="16sp"
+                    android:textColor="#212421"
+                    android:imeOptions="actionDone"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/HelpBtn2"
+                    android:layout_column="3"
+                    android:src="@drawable/help"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitCenter" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debt Maturity:"
+                    android:id="@+id/textView4"
+                    android:layout_column="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#212421" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/DebtText"
+                    android:layout_column="2"
+                    android:textSize="16sp"
+                    android:textColor="#212421"
+                    android:imeOptions="actionDone"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/HelpBtn3"
+                    android:layout_column="3"
+                    android:src="@drawable/help"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitXY" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+        </TableLayout>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/SaveBtn"
+            android:src="@drawable/save"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" />
+    </RelativeLayout>
+</RelativeLayout>
