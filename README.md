@@ -1,5 +1,5 @@
-# callhajj
-calculator hajj.
+# MoslemExpenseTrack
+Moslem Expens Track for Hajj.
 
 HI guys thanks for clone 
 
